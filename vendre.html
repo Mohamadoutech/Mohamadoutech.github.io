@@ -21,24 +21,40 @@
     <p>Remplissez le formulaire pour proposer votre véhicule</p>
 </section>
 
-<form class="formulaire">
-    <label>Nom du vendeur</label>
-    <input type="text" required>
-
+<form class="formulaire" id="formVente">
     <label>Marque</label>
-    <input type="text" required>
+    <input type="text" id="marque" required>
 
     <label>Modèle</label>
-    <input type="text" required>
+    <input type="text" id="modele" required>
 
     <label>Année</label>
-    <input type="number" required>
+    <input type="number" id="annee" required>
 
-    <label>Prix (FCFA)</label>
-    <input type="number" required>
+    <label>Prix (€)</label>
+    <input type="number" id="prix" required>
 
     <button type="submit" class="btn">Envoyer</button>
 </form>
 
+<script>
+document.getElementById("formVente").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let voiture = {
+        marque: marque.value,
+        modele: modele.value,
+        annee: annee.value,
+        prix: prix.value
+    };
+
+    let voitures = JSON.parse(localStorage.getItem("voitures")) || [];
+    voitures.push(voiture);
+    localStorage.setItem("voitures", JSON.stringify(voitures));
+
+    alert("Voiture ajoutée !");
+    this.reset();
+});
+</script>
 </body>
 </html>
