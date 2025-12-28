@@ -1,95 +1,175 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+/* GENERAL */
+
+*
+{
+    margin:0;
+    padding: 0;
+
 }
+
+body
+{
+        font-family: Arial,sans-serif;
+        font-size:15px;
+}
+
+h1
+{
+    font-family: serif;
+        font-size:45px;
+        color:#444;
+}
+h2{
+    color:#444;
+    font-size: 55px;
+
+}
+h4
+{
+    font-size: 24px;
+    color:#444;
+}
+p{
+    line-height: 20px;
+    color:#777;
+}
+
+ul{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color:#444;
+}
+.wrapper
+{
+    width: 940Px;
+    margin:0 auto;
+    padding: 0 10px;
+}
+.orange
+{
+    color: #ff7a00;
+}
+
 
 /* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    border-bottom: 2px solid #000;
-    background-color: white;
+
+
+header
+{
+        height: 120px;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 20px;
+header h1
+{
+    float: left;
+    margin-top:32px;
+}
+header nav 
+{
+    float: right;
+    margin-top:50px; 
+}
+header nav ul li
+{
+    float: left;
+    display:inline-block;
+}
+header nav ul li a
+{
+        text-transform: uppercase;
+        font-weight:bold;
+        margin-right:20px;
 }
 
-nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+/*MAIN IMAGE*/
+
+#main-image
+{
+    height:580px;
+    background:url('images/24.3\ main.jpg.jpg') center;
+
 }
 
-/* BIENVENUE */
-.welcome {
+#main-image h2
+{
+    font-weight: normal;
+    text-transform: uppercase;
     text-align: center;
-    margin: 40px 0;
-}
-
-/* BLOCS */
-.choices {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
-}
-
-.box {
-    width: 250px;
-    height: 200px;
-    border: 2px solid #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-
-.box h2 {
+    padding: 150px 0 40px 0;
     margin-bottom: 20px;
 }
 
-.btn {
-    padding: 10px 20px;
-    border: 2px solid #000;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: black;
-    color: white;
-}
-
-
-.formulaire {
-    width: 300px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.formulaire input {
-    margin-bottom: 10px;
-    padding: 8px;
-}
-
-.voitures {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.car {
-    background: white;
-    padding: 10px;
-    width: 200px;
+.button-1
+{
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: #ff7a00;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 50px;
     text-align: center;
-    border: 1px solid black;
+    border-radius: 3px;
 }
+.button-1:hover
+{
+    background: #02b8dd;
+}
+
+/* STEPS */
+
+#steps ul
+{
+    margin: 80px 0;
+
+}
+#steps ul li
+{
+    width: 300px;
+    float: left;
+    padding-top: 140px;
+    text-align: center;
+    margin-right: 10px;
+}
+#steps h4
+{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#steps p
+{
+    margin-bottom: 20px;
+}
+#step-1
+{
+    background:url('images/24.1\ steps-icon-1.png.png') no-repeat top center ;
+}
+#step-2
+{
+    background:url('images/24.2\ steps-icon-2.png.png') no-repeat top center ;   
+}
+#step-3
+{
+    background:url('images/24.5\ steps-icon-3.png.png') no-repeat top center ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
